@@ -14,7 +14,7 @@ import io.restassured.http.ContentType;
 public class DiffWaysToCreatePostRequestBody {
 
     //Post request body using a HashMap
-    //@Test
+    @Test
     public void postUsingHashMap() {
         System.out.println("Executed method: 'postUsingHashMap()'");
         baseURI = "http://localhost:3000";
@@ -36,7 +36,7 @@ public class DiffWaysToCreatePostRequestBody {
     }
     
     //Post request body using org.json
-    //@Test
+    @Test
     public void postUsingOrgJsonDependency(){
         System.out.println("Executed method: 'postUsingOrgJsonDependency()'");
         baseURI = "http://localhost:3000";
@@ -57,7 +57,7 @@ public class DiffWaysToCreatePostRequestBody {
     }
     
     //Post request body using POJO class
-    //@Test
+    @Test
     public void postUsingPojoClass() {
         System.out.println("Executed method: 'postUsingPojoClass()'");
         baseURI = "http://localhost:3000";
@@ -70,7 +70,7 @@ public class DiffWaysToCreatePostRequestBody {
         .when()
             .post("/employees")
         .then()
-            .statusCode(201).log().all();
+            .statusCode(201);
     }
     
     //Post request body using external json file data
@@ -95,7 +95,7 @@ public class DiffWaysToCreatePostRequestBody {
             .when()
                 .post("/employees")
             .then()
-                .statusCode(201).log().all();
+                .statusCode(201);
         } catch (FileNotFoundException e) {
         }
     }
