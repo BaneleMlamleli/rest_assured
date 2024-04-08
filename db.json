@@ -1,15 +1,12 @@
 {
-  "student": [
+  "students": [
     {
       "id": "1",
       "email": "michael.lawson@reqres.in",
       "first_name": "Michael",
       "last_name": "Lawson",
       "avatar": "https://reqres.in/img/faces/7-image.jpg",
-      "courses": [
-        "Application development I",
-        "Project Management II"
-      ]
+      "courses": ["Application development I", "Project Management II"]
     },
     {
       "id": "2",
@@ -17,10 +14,7 @@
       "first_name": "Lindsay",
       "last_name": "Ferguson",
       "avatar": "https://reqres.in/img/faces/8-image.jpg",
-      "courses": [
-        "Algorithm III",
-        "System Analyst III"
-      ]
+      "courses": ["Algorithm III", "System Analyst III"]
     },
     {
       "id": "3",
@@ -28,17 +22,11 @@
       "first_name": "Tobias",
       "last_name": "Funke",
       "avatar": "https://reqres.in/img/faces/9-image.jpg",
-      "courses": [
-        "Networking II",
-        "IP Configurations II"
-      ]
+      "courses": ["Networking II", "IP Configurations II"]
     },
     {
       "id": "4eb0",
-      "courses": [
-        "Engineering and Design I",
-        "Electrical Engineering II"
-      ],
+      "courses": ["Engineering and Design I", "Electrical Engineering II"],
       "last_name": "usedHashMap",
       "avatar": "https://reqres.in/img/faces/8-image.jpg",
       "first_name": "usedHashMap",
@@ -46,10 +34,7 @@
     },
     {
       "id": "5f4e",
-      "courses": [
-        "Engineering and Design I",
-        "Electrical Engineering II"
-      ],
+      "courses": ["Engineering and Design I", "Electrical Engineering II"],
       "last_name": "usedHashMap",
       "avatar": "https://reqres.in/img/faces/8-image.jpg",
       "first_name": "usedHashMap",
@@ -105,6 +90,34 @@
       "first_name": "usedPojo",
       "last_name": "usedPojo",
       "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    }
+  ],
+  "books": [
+    {
+      "author": "Nigel Rees",
+      "category": "reference",
+      "price": 8.95,
+      "title": "Sayings of the Century"
+    },
+    {
+      "author": "Evelyn Waugh",
+      "category": "fiction",
+      "price": 12.99,
+      "title": "Sword of Honour"
+    },
+    {
+      "author": "Herman Melville",
+      "category": "fiction",
+      "isbn": "0-5.4.01311-3",
+      "price": 8.99,
+      "title": "Moby Dick"
+    },
+    {
+      "author": "J. R. R. Tolkien",
+      "category": "fiction",
+      "isbn": "0-395-19395-8",
+      "price": 22.99,
+      "title": "The Lord of the Rings"
     }
   ],
   "support": {

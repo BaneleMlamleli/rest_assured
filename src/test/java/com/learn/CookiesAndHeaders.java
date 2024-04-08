@@ -1,7 +1,6 @@
 package com.learn;
 
-import static io.restassured.RestAssured.get;
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 import java.util.Map;
 

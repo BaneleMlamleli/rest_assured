@@ -27,7 +27,8 @@ public class DiffWaysToCreatePostRequestBody {
         mapData.put("courses", arrayCourse);
 
         given()
-            .contentType(ContentType.JSON).accept(ContentType.JSON)
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
             .body(mapData)
         .when()
             .post("/student")
