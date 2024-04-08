@@ -44,7 +44,14 @@ public class ManageUsers {
         jsonObjectMap.put("job", jobTitle);
         System.out.println(jsonObjectMap);
 
-        given().contentType(ContentType.JSON).accept(ContentType.JSON).body(jsonObjectMap.toJSONString()).when().post("/users").then().statusCode(201).log().all();
+        given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .body(jsonObjectMap.toJSONString())
+        .when()
+            .post("/users")
+        .then()
+            .statusCode(201).log().all();
     }
     
     @Test
@@ -55,7 +62,14 @@ public class ManageUsers {
         userDetailsMap.put("job", "QA Engineer01");
         JSONObject jsonObjectMap = new JSONObject(userDetailsMap);
 
-        given().contentType(ContentType.JSON).accept(ContentType.JSON).body(jsonObjectMap.toJSONString()).when().put("/users/2").then().statusCode(200).log().all();
+        given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .body(jsonObjectMap.toJSONString())
+        .when()
+            .put("/users/2")
+        .then()
+            .statusCode(200).log().all();
     }
     
     @Test
@@ -66,12 +80,22 @@ public class ManageUsers {
         jsonObjectMap.put("job", "QA Engineer02");
         System.out.println(jsonObjectMap);
 
-        given().contentType(ContentType.JSON).accept(ContentType.JSON).body(jsonObjectMap.toJSONString()).when().patch("/users/2").then().statusCode(200).log().all();
+        given()
+            .contentType(ContentType.JSON)
+            .accept(ContentType.JSON)
+            .body(jsonObjectMap.toJSONString())
+        .when()
+            .patch("/users/2")
+        .then()
+            .statusCode(200).log().all();
     }
     
     @Test
     public void deleteUser() {
         baseURI = "https://reqres.in/api";
-        when().delete("/users/2").then().statusCode(204).log().all();
+        when()
+            .delete("/users/2")
+        .then()
+            .statusCode(204).log().all();
     }
 }
