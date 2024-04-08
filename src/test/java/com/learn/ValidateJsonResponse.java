@@ -18,7 +18,6 @@ public class ValidateJsonResponse {
             .get("http://localhost:3000/books")
         .then()
             .statusCode(200)
-            // .header("Content-Type","application/json; charset=utf-8")
             .body("title[3]", equalTo("The Lord of the Rings"));
     }   
 }
