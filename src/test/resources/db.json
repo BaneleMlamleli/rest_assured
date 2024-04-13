@@ -1,0 +1,123 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "courses": ["Application development I", "Project Management II"]
+    },
+    {
+      "id": "2",
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "courses": ["Algorithm III", "System Analyst III"]
+    },
+    {
+      "id": "3",
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "courses": ["Networking II", "IP Configurations II"]
+    },
+    {
+      "id": "4eb0",
+      "courses": ["Engineering and Design I", "Electrical Engineering II"],
+      "last_name": "usedHashMap",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "usedHashMap",
+      "email": "newstudent@student.com"
+    },
+    {
+      "id": "5f4e",
+      "courses": ["Engineering and Design I", "Electrical Engineering II"],
+      "last_name": "usedHashMap",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "usedHashMap",
+      "email": "newstudent@student.com"
+    }
+  ],
+  "employees": [
+    {
+      "id": "4",
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": "5",
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": "6",
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    },
+    {
+      "id": "dc83",
+      "last_name": "usedJSONObject",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "usedJSONObject",
+      "email": "newemployee@employee.com"
+    },
+    {
+      "id": "0fca",
+      "email": "newemployee@employee.com",
+      "first_name": "usedPojo",
+      "last_name": "usedPojo",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": "ad7b",
+      "last_name": "usedJSONObject",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "usedJSONObject",
+      "email": "newemployee@employee.com"
+    },
+    {
+      "id": "fcf7",
+      "email": "newemployee@employee.com",
+      "first_name": "usedPojo",
+      "last_name": "usedPojo",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    }
+  ],
+  "books": [
+    {
+      "author": "Nigel Rees",
+      "category": "reference",
+      "price": 8.95,
+      "title": "Sayings of the Century"
+    },
+    {
+      "author": "Evelyn Waugh",
+      "category": "fiction",
+      "price": 12.99,
+      "title": "Sword of Honour"
+    },
+    {
+      "author": "Herman Melville",
+      "category": "fiction",
+      "isbn": "0-5.4.01311-3",
+      "price": 8.99,
+      "title": "Moby Dick"
+    },
+    {
+      "author": "J. R. R. Tolkien",
+      "category": "fiction",
+      "isbn": "0-395-19395-8",
+      "price": 22.99,
+      "title": "The Lord of the Rings"
+    }
+  ]
+}

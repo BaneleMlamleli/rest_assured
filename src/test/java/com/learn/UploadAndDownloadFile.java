@@ -11,7 +11,7 @@ public class UploadAndDownloadFile {
     
     @Test
     public void singleFileUpload() {
-        File dataFile = new File("Test.txt");
+        File dataFile = new File("/src/resources/Test.txt");
 
         given()
             .multiPart("files", dataFile)
@@ -20,13 +20,13 @@ public class UploadAndDownloadFile {
             .post("http://locahost:8080/Test")
         .then()
             .statusCode(200)
-                .body("filesName", equalTo("Test.txt"));
+                .body("filesName", equalTo("/src/resources/Test.txt"));
     }
     
     @Test
     public void multipleFileUpload() {
-        File dataFile = new File("Test.txt");
-        File dataFile1 = new File("Test1.txt");
+        File dataFile = new File("/src/resources/Test.txt");
+        File dataFile1 = new File("/src/resources/Test1.txt");
 
         given()
             .multiPart("files", dataFile)
@@ -36,7 +36,7 @@ public class UploadAndDownloadFile {
             .post("http://locahost:8080/Test")
         .then()
             .statusCode(200)
-                .body("[0].filesName", equalTo("Test.txt"))
-                .body("[1].filesName1", equalTo("Test1.txt"));
+                .body("[0].filesName", equalTo("/src/resources/Test.txt"))
+                .body("[1].filesName1", equalTo("/src/resources/Test1.txt"));
     }
 }
